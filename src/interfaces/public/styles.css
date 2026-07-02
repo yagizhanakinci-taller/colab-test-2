@@ -311,6 +311,22 @@ a:focus-visible {
   border-top: 1px solid var(--color-border);
 }
 
+/* Scroll-driven enhancements (classes applied by main.js only) */
+.site-header.is-scrolled {
+  box-shadow: 0 2px 12px rgba(31, 37, 55, 0.08);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
 /* Narrow screens */
 @media (max-width: 800px) {
   .feature-grid {
