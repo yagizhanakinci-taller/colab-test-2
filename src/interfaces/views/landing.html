@@ -11,26 +11,60 @@
       color: #1f2933;
       background-color: #f9fafb;
     }
+
+    /* Mobile-first base styles (< 768px) */
     .hero {
       max-width: 44rem;
       margin: 0 auto;
-      padding: 6rem 1.5rem 4rem;
+      padding: 3rem 1rem 2.5rem;
       text-align: center;
+      overflow-wrap: break-word;
     }
     .hero h1 {
-      font-size: 2.75rem;
+      font-size: 1.875rem;
+      line-height: 1.2;
       margin: 0 0 0.75rem;
     }
     .hero .tagline {
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       color: #52606d;
-      margin: 0 0 1.5rem;
+      margin: 0 0 1.25rem;
     }
     .hero .description {
-      font-size: 1.0625rem;
+      font-size: 1rem;
       line-height: 1.7;
       color: #3e4c59;
       margin: 0;
+    }
+
+    /* Tablet (>= 768px) */
+    @media (min-width: 768px) {
+      .hero {
+        padding: 4.5rem 1.5rem 3rem;
+      }
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+      .hero .tagline {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+      .hero .description {
+        font-size: 1.0625rem;
+      }
+    }
+
+    /* Desktop (>= 1024px) */
+    @media (min-width: 1024px) {
+      .hero {
+        padding: 6rem 1.5rem 4rem;
+      }
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+      .hero .tagline {
+        font-size: 1.375rem;
+      }
     }
   </style>
 </head>
