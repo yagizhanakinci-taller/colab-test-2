@@ -1,0 +1,14 @@
+{
+  "name": "simple-landing-page-2",
+  "version": "1.0.0",
+  "description": "A simple landing page application utilizing Clean Architecture principles.",
+  "main": "src/interfaces/index.js",
+  "scripts": {
+    "start": "node src/interfaces/index.js",
+    "test": "echo 'No tests specified'"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {} 
+}
